@@ -8,8 +8,8 @@
 
 import UIKit
 
-@objc extension UIViewController {
-  @objc func backButtonOperation(backButton: Any?) {
+@objc public extension UIViewController {
+  @objc public func backButtonOperation(backButton: Any?) {
     
   }
 }
