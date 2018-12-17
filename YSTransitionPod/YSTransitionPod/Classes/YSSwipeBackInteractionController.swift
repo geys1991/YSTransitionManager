@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol YSSwipeBackInteractionControllerDelegate: AnyObject {
+@objc public protocol YSSwipeBackInteractionControllerDelegate: AnyObject {
   @objc optional func gestureBackBegin()
   @objc optional func gestureBackCancel()
   @objc optional func gestureBackFinished()
@@ -16,7 +16,7 @@ import UIKit
   @objc optional func fireBackGesture() -> Bool
 }
 
-class YSSwipeBackInteractionController: UIPercentDrivenInteractiveTransition, UIGestureRecognizerDelegate {
+public class YSSwipeBackInteractionController: UIPercentDrivenInteractiveTransition, UIGestureRecognizerDelegate {
   
   // MARK: perproty
   var context: YSGestureTransitionBackContext = YSGestureTransitionBackContext()
@@ -27,7 +27,7 @@ class YSSwipeBackInteractionController: UIPercentDrivenInteractiveTransition, UI
   var gestureChanged: Bool = false
   weak var gestureBackInteractionDelegate: YSSwipeBackInteractionControllerDelegate?
   
-  override var completionSpeed: CGFloat {
+  override public var completionSpeed: CGFloat {
     set {
       
     }
@@ -53,15 +53,15 @@ class YSSwipeBackInteractionController: UIPercentDrivenInteractiveTransition, UI
   
   // MARK: UIGestureRecognizerDelegate
   
-  func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+  private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
     return true
   }
   
-  func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+  private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
     return true
   }
   
-  func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+  private func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
     var viewController: UIViewController?
     if let targetVC = gestureRecognizer.view?.viewController {
       if let navi = targetVC.navigationController {
@@ -79,7 +79,7 @@ class YSSwipeBackInteractionController: UIPercentDrivenInteractiveTransition, UI
     return true
   }
   
-  func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+  private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
     if let target: YSSwipeBackInteractionControllerDelegate = getProperDelegate(gestureRecognizer: gestureRecognizer) as? YSSwipeBackInteractionControllerDelegate {
       if target.disableBackGesture?() == false {
         return false
