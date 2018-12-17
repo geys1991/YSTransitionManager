@@ -18,9 +18,9 @@ private var kTransition = "transition"
 public class YSTransitionManager: NSObject {
 
   public static let instance: YSTransitionManager = YSTransitionManager ()
-  var tabbarController: UIViewController?
-  var topSnapShotView: UIView?
-  var swipeBackSuccessFinishProcessing: Bool = false
+  public var tabbarController: UIViewController?
+  public var topSnapShotView: UIView?
+  public var swipeBackSuccessFinishProcessing: Bool = false
   
   // MARK: public methods
   
