@@ -21,6 +21,7 @@
 		09092B3E21C798850067B4EE /* YSTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09092B3721C798850067B4EE /* YSTransitionManager.swift */; };
 		09092B3F21C798850067B4EE /* YSPresentTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09092B3821C798850067B4EE /* YSPresentTransition.swift */; };
 		09092B4021C798850067B4EE /* YSSwipeBackInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09092B3921C798850067B4EE /* YSSwipeBackInteractionController.swift */; };
+		09421BC521C7BDFA00DDBF33 /* ViewControllerYS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09421BC421C7BDFA00DDBF33 /* ViewControllerYS.swift */; };
 		467CE241FAEEAB69BC39E5D7 /* Pods_YSTransitionPodTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C6AE9FCFDAD2311FD93F253 /* Pods_YSTransitionPodTests.framework */; };
 		E826F37F0A5CBB4E7A306DA3 /* Pods_YSTransitionPodUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCC907BAFDC2D62EBC974D3 /* Pods_YSTransitionPodUITests.framework */; };
 		FD53FC6562490E5204780AF6 /* Pods_YSTransitionPod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 672EDFB79F85560E63BC668A /* Pods_YSTransitionPod.framework */; };
@@ -64,6 +65,7 @@
 		09092B3721C798850067B4EE /* YSTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSTransitionManager.swift; sourceTree = "<group>"; };
 		09092B3821C798850067B4EE /* YSPresentTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSPresentTransition.swift; sourceTree = "<group>"; };
 		09092B3921C798850067B4EE /* YSSwipeBackInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSSwipeBackInteractionController.swift; sourceTree = "<group>"; };
+		09421BC421C7BDFA00DDBF33 /* ViewControllerYS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerYS.swift; sourceTree = "<group>"; };
 		2A4F0705C02818061763C05F /* Pods-YSTransitionPodUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSTransitionPodUITests.release.xcconfig"; path = "Target Support Files/Pods-YSTransitionPodUITests/Pods-YSTransitionPodUITests.release.xcconfig"; sourceTree = "<group>"; };
 		42AA191CD93D2832BE451E0E /* Pods-YSTransitionPodTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YSTransitionPodTests.debug.xcconfig"; path = "Target Support Files/Pods-YSTransitionPodTests/Pods-YSTransitionPodTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCC907BAFDC2D62EBC974D3 /* Pods_YSTransitionPodUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YSTransitionPodUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			children = (
 				09092B1921C798520067B4EE /* YSTransitionPodTests.swift */,
 				09092B1B21C798520067B4EE /* Info.plist */,
+				09421BC421C7BDFA00DDBF33 /* ViewControllerYS.swift */,
 			);
 			path = YSTransitionPodTests;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09421BC521C7BDFA00DDBF33 /* ViewControllerYS.swift in Sources */,
 				09092B1A21C798520067B4EE /* YSTransitionPodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
