@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YSTransitionManager"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "Manager for Transition"
 
   # This description is used to generate tags and improve search results.
@@ -133,7 +133,7 @@ Pod::Spec.new do |spec|
   # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  spec.dependency 'YYKit', '~> 1.0.9'
+  spec.dependency 'YYKit'
   spec.swift_version = '4.0'
 
 end
