@@ -1,0 +1,6 @@
+framework module Pods_YSTransitionPodUITests {
+  umbrella header "Pods-YSTransitionPodUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
